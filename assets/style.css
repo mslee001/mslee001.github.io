@@ -1,13 +1,20 @@
 
 .footer-border {
-    border-top: 5px solid teal;
+    border-top: 5px solid #288;
 }
 
 .nav-border {
-    border-bottom: 5px solid teal;
+    border-bottom: 5px solid #288;
 }
 
 .button-teal {
-    background-color: teal;
+    background-color: #288;
     color: white;
+}
+.port-pics {
+    max-width: 400px;
+}
+
+.pic-buttons {
+    padding: 80% 0% 0% 0%;
 }
