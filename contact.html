@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Megan Sleezer About</title>
+    <title>Megan Sleezer Contact</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -21,14 +21,14 @@
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active d-flex justify-content-end">
-                        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+                    <li class="nav-item d-flex justify-content-end">
+                        <a class="nav-link" href="index.html">About</a>
                     </li>
                     <li class="nav-item d-flex justify-content-end">
                         <a class="nav-link" href="portfolio.html">Portfolio</a>
                     </li>
-                    <li class="nav-item d-flex justify-content-end">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                    <li class="nav-item active d-flex justify-content-end">
+                        <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
@@ -36,16 +36,32 @@
     </header>
 
     <!-- Main content -->
-    <main class="container mt-4 mb-4 pb-4">
+    <main class="container mb-4 pb-4 mt-4">
         <div class="row card">
-            <section class="col-md-12 card-body">
-                <h3 class="card-title text-center">About Me</h3>
+            <div class="col-md-12 card-body text-dark">
+                <h3 class="card-title text-center">Contact Me</h3>
                 <hr class="mb-4" />
-                <img src="assets/bio-pic-sm.jpg" class="img-thumbnail mr-3 mb-3 img-fluid float-left"
-                    alt="This is a headshot of Megan Sleezer.">
-                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet massa at nisl tincidunt pulvinar efficitur vitae arcu. Donec eget ultricies sapien, non sodales risus. Aliquam et ultricies nibh. Etiam mattis quis risus et tristique. Quisque id libero non eros dapibus rutrum pretium ac orci. Nunc tristique dui vitae turpis auctor, eget varius ante convallis. Nunc suscipit efficitur urna in suscipit. Praesent commodo, ligula in vestibulum viverra, massa augue pharetra enim, in pharetra ligula erat in diam. Proin non purus sed eros varius fermentum.</p>
-                <p class="card-text">Fusce bibendum felis vitae ipsum mattis laoreet. Praesent molestie ultricies mi, eu commodo neque imperdiet nec. Fusce finibus nibh eget rhoncus egestas. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus sodales maximus fermentum. Nunc condimentum urna lacus, eu auctor enim vestibulum non. Nam aliquet, neque at ullamcorper pharetra, metus sapien euismod lectus, eleifend viverra felis ex nec leo. Donec mi arcu, varius eu ligula in, sollicitudin hendrerit diam. Sed sit amet egestas turpis, tincidunt ultrices mi. Nulla eu volutpat libero, ut semper urna. Proin venenatis ut nulla vitae mattis. Donec tempus dapibus ligula, in vulputate nisl bibendum lacinia</p>
-            </section>
+
+                <!-- Contact Me Form. Currently, the submit button does not store the information anywhere. -->
+                <form>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Name</label>
+                        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-dark mb-2">Submit</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </main>
 
