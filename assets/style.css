@@ -1,14 +1,14 @@
 
 .footer-border {
-    border-top: 5px solid #288;
+    border-top: 5px solid #9c2017;
 }
 
 .nav-border {
-    border-bottom: 5px solid #288;
+    border-bottom: 5px solid #9c2017;
 }
 
 .button-teal {
-    background-color: #288;
+    background-color: #9c2017;
     color: white;
 }
 .port-pics {
@@ -17,4 +17,16 @@
 
 .pic-buttons {
     padding: 80% 0% 0% 0%;
+}
+
+body {
+    background-color: lightgray;
+}
+
+nav {
+    background-color: #222;
+}
+
+footer {
+    background-color: #222;
 }

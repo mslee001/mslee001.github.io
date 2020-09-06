@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="assets/style.css" />
 </head>
 
-<body class="bg-light">
+<body>
     <header>
         <!-- navigation bar -->
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark nav-border">
+        <nav class="navbar navbar-expand-md navbar-dark nav-border fixed-top">
             <a class="navbar-brand" href="#">
                 <img src="assets/apple-touch-icon.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
                 Megan Sleezer
@@ -40,74 +40,45 @@
     </header>
 
     <!-- Main content -->
-    <main class="container mt-4 mb-4 pb-4">
-        <!-- Rows will be 1 column until md, then it will be 2 -->
-        <div class="card">
-        <div class="row row-cols-1 row-cols-md-2">
-            <!-- Card title. This needs to be one col no matter the size -->
-            <div class="col-md-12">
-                <h3 class="card-title text-center mt-3">Portfolio</h3>
-                <hr class="mb-4"  />
-            </div>
+    <main class="container mt-5">
 
-            <!-- First portfolio picture with large button that is a placeholder to an upcoming project -->
-            <div class="col mb-4">
-                <div class="card bg-dark text-white mx-auto port-pics">
-                    <img src="assets/word-guess-sm.jpg" class="card-img" alt="A colorful city at night.">
-                    <div class="card-img-overlay pic-buttons">
-                        <a class="btn button-teal btn-lg btn-block" href="#" role="button">Word Guess</a>
-                    </div>
+        <h3 class="card-title text-center mt-5 pt-4">Portfolio</h3>
+        <div class="card-deck">
+            
+            <!-- First project information here -->
+            <div class="card shadow-lg">
+                <img src="assets/StarPlannr.PNG" class="card-img-top" alt="Screenshot of StarPlannr">
+                <div class="card-body">
+                  <h5 class="card-title text-center">StarPlannr Web App</h5>
+                  <a target="_blank" href="https://github.com/mslee001/StarPlannr" class="btn button-teal mb-1 btn-block">StarPlannr Github Repo</a>
+                  <a target="_blank" href="https://mslee001.github.io/StarPlannr/" class="btn button-teal btn-block">StarPlannr</a>
                 </div>
-            </div>
+              </div>
 
             <!-- Second portfolio picture with large button that is a placeholder to an upcoming project -->
-            <div class="col mb-4">
-                <div class="card bg-dark text-white mx-auto port-pics">
-                    <img src="assets/rpg-game-sm.jpg" class="card-img" alt="A man playing a game on the computer.">
-                    <div class="card-img-overlay pic-buttons">
-                        <a class="btn button-teal btn-lg btn-block" href="#" role="button">RPG Game</a>
-                    </div>
+            <div class="card shadow-lg">
+                <img src="assets/weather-dash2.PNG" class="card-img-top" alt="A screenshot of Weather Dashboard">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Weather Dashboard</h5>
+                  <a target="_blank" href="https://github.com/mslee001/Weather-Dashboard" class="btn button-teal mb-1 btn-block">Weather Dashboard Github Repo</a>
+                  <a target="_blank" href="https://mslee001.github.io/Weather-Dashboard/" class="btn button-teal btn-block">Weather Dashboard</a>
                 </div>
-            </div>
+              </div>
 
-            <!-- Third portfolio picture with large button that is a placeholder to an upcoming project -->
-            <div class="col mb-4">
-                <div class="card bg-dark text-white mx-auto port-pics">
-                    <img src="assets/trivia-game-sm.jpg" class="card-img"
-                        alt="A laptop on a white desk in a white room.">
-                    <div class="card-img-overlay pic-buttons">
-                        <a class="btn button-teal btn-lg btn-block" href="#" role="button">Trivia Game</a>
-                    </div>
+            <div class="card shadow-lg">
+                <img src="assets/work-day-scheduler.PNG" class="card-img-top" alt="A screenshot of Work Day Scheduler">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Work Day Scheduler</h5>
+                  <a target="_blank" href="https://github.com/mslee001/Work-Day-Scheduler" class="btn button-teal mb-1 btn-block">Work Day Scheduler Github Repo</a>
+                  <a target="_blank" href="https://mslee001.github.io/Work-Day-Scheduler/" class="btn button-teal btn-block">Work Day Scheduler</a>
                 </div>
-            </div>
-
-            <!-- Fourth portfolio picture with large button that is a placeholder to an upcoming project -->
-            <div class="col mb-4">
-                <div class="card bg-dark text-white mx-auto port-pics">
-                    <img src="assets/info-widget-sm.jpg" class="card-img"
-                        alt="Two hands working on an ipad connected to larger computer monitor.">
-                    <div class="card-img-overlay pic-buttons">
-                        <a class="btn button-teal btn-lg btn-block" href="#" role="button">Info Widget</a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Fifth portfolio picture with large button that is a placeholder to an upcoming project -->
-            <div class="col">
-                <div class="card bg-dark text-white mx-auto port-pics">
-                    <img src="assets/rock-paper-sm.jpg" class="card-img" alt="The milky way in the night sky.">
-                    <div class="card-img-overlay pic-buttons">
-                        <a class="btn button-teal btn-lg btn-block" href="#" role="button">Rock Paper Scissors</a>
-                    </div>
-                </div>
-            </div>
+              </div>
 
         </div>
-    </div>
     </main>
 
     <!-- Fixed footer bar at bottom of page -->
-    <footer class="footer bg-dark mt-auto py-3 fixed-bottom footer-border"></footer>
+    <footer class="footer mt-auto py-3 fixed-bottom footer-border"></footer>
 
     <!-- Required scripts for some bootstrap components -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
