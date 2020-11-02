@@ -2,83 +2,48 @@
 <html lang="en-us">
 
 <!-- document head -->
+
 <head>
     <title>Megan Sleezer About</title>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <link href="https://unpkg.com/cirrus-ui" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/cirrus-ui@0.5.5/dist/cirrus.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css" />
+
+    <script src="https://kit.fontawesome.com/4c870da060.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/script.js"></script>
 </head>
 
 <body>
-    <header>
-        <!-- navigation bar -->
-        <nav class="navbar navbar-expand-md navbar-dark nav-border fixed-top">
-            <a class="navbar-brand" href="#">
-                <img src="assets/apple-touch-icon.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-                Megan Sleezer
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active d-flex justify-content-end">
-                        <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item d-flex justify-content-end">
-                        <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item d-flex justify-content-end">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+    <div id="splash-img" class="hero fullscreen hero-img parallax-img">
+        <div class="hero-body">
+            <div class="content u-text-center">
+                <div data-aos="zoom-in" data-aos-duration="3000">
+                    <h1 class="uppercase white title">Welcome to Megan's Portfolio</h1>
+                    <h3 class="uppercase white sub-title faded">Please enter</h3>
+                </div>
+                <a data-aos="fade-right" data-aos-duration="3000" href="about.html" class="u-inline-block">
+                    <button class="btn-light outline">
+                        About Me
+                    </button>
+                </a>
+                <a data-aos="fade-left" data-aos-duration="3000" href="portfolio.html" class="u-inline-block">
+                    <button class="btn-light outline">
+                        Projects
+                    </button>
+                </a>
             </div>
-        </nav>
-    </header>
-
-    <!-- Main content -->
-    <main class="container mt-4 mb-4 pb-4">
-        <div class="row card mt-5">
-            <section class="col-md-12 card-body">
-                <h3 class="card-title text-center">About Me</h3>
-                <hr class="mb-4" />
-                <img src="assets/bio-pic-sm.jpg" class="img-thumbnail mr-3 mb-3 img-fluid float-left" alt="This is a headshot of Megan Sleezer.">
-                <h5>Contact Information</h5>
-                <p class="card-text">Full Name: Megan Sleezer
-                </br>GitHub Profile: <a target="_blank" href="https://github.com/mslee001">https://github.com/mslee001</a>
-                </br>LinkedIn Profile: <a target="_blank" href="https://www.linkedin.com/in/megan-sleezer-664935116/">https://www.linkedin.com/in/megan-sleezer-664935116/</a>
-                </br>Email Address: megan.sleezer@gmail.com
-                </br>Phone Number: (360) 292-9873
-            </br>Link to resume: <a target="_blank" href="assets/Megan Sleezer Resume 09-04-2020.pdf">Resume</a>
-                </p>
-                </br>
-
-                <h5>Bio</h5>
-                <p class="card-text">Army veteran, mother, avid technology buff. </p>
-                <p class="card-text">Probably my greatest strength is just the love of figuring things out. When I was 15, I cracked the case of the family computer to replace our 28k modem with a 56k modem. There were no instructions and no previous knowledge of the task. I’m sure there are plenty of people of my generation who may have a similar story, but for me, this was the catalyst of my lifelong obsession with learning new things.</p>
-                <p class="card-text">Spending four years in the Army starting at the tender age of 17, whether at my home base at Ft. Lewis, Washington or during my deployment to Iraq, taught me the true meaning of teamwork. Continuing on my learning path and my desire to learn everything I can as fast as I can learn it, I attained the rank of E5 (Sergeant) during my short stint. </p>
-                <p class="card-text">Returning to civilian life, the importance of education and my love of working on and with computers lead me to earn a Bachelor of Science Information Technology degree. My passion for learning has never waned since swapping out that modem. After spending a few years supporting software developed by others, it’s time to learn everything about developing it myself, as fast as I can.</p>
-                <p class="card-text">Away from work and hobbies, including building custom computer systems to simplify our time at home, I very much enjoy spending time outside, hiking and exploring with my four children and my partner. </p>
-            </section>
         </div>
-    </main>
-
-    <!-- Fixed footer bar at bottom of page -->
-    <footer class="footer mt-auto py-3 fixed-bottom footer-border"></footer>
-
-    <!-- Required scripts for some bootstrap components -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+    </div>
 
 </body>
 
