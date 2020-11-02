@@ -1,32 +1,42 @@
-
-.footer-border {
-    border-top: 5px solid #9c2017;
-}
-
-.nav-border {
-    border-bottom: 5px solid #9c2017;
-}
-
-.button-teal {
-    background-color: #9c2017;
-    color: white;
-}
-.port-pics {
-    max-width: 400px;
-}
-
-.pic-buttons {
-    padding: 80% 0% 0% 0%;
+footer {
+    width: 100%;
+    background-color: #fff;
+    background: linear-gradient(#210b11,#3b3f47), no-repeat;
+    background-size: cover;
+    will-change: transform;
 }
 
 body {
-    background-color: lightgray;
+    background: linear-gradient(lightgray, white) no-repeat;
+    background-size: cover;
 }
 
-nav {
-    background-color: #222;
+.header {
+    background: #210b11;
+    color: white;
+}
+.header a {
+    color: white;
 }
 
-footer {
-    background-color: #222;
+ul {
+    list-style-type: none;
+}
+
+#splash-img {
+    background-image: url("main.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.padtop {
+    margin-top: 65px;
+}
+
+.card {
+    margin: 10px;
+}
+
+.fa-heart {
+    color: red;
 }
