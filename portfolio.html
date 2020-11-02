@@ -2,121 +2,215 @@
 <html lang="en-us">
 
 <!-- document head -->
+
 <head>
     <title>Megan Sleezer Portfolio</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://unpkg.com/cirrus-ui" type="text/css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/cirrus-ui@0.5.5/dist/cirrus.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css" />
+    
+    <script src="https://kit.fontawesome.com/4c870da060.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="assets/script.js"></script>
 </head>
 
 <body>
     <header>
         <!-- navigation bar -->
-        <nav class="navbar navbar-expand-md navbar-dark nav-border fixed-top">
-            <a class="navbar-brand" href="#">
-                <img src="assets/apple-touch-icon.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
-                Megan Sleezer
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item d-flex justify-content-end">
-                        <a class="nav-link" href="index.html">About</a>
-                    </li>
-                    <li class="nav-item active d-flex justify-content-end">
-                        <a class="nav-link" href="portfolio.html">Portfolio <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item d-flex justify-content-end">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                </ul>
+        <div class="header header-animated header-fixed">
+            <div class="header-brand">
+                <div class="nav-item no-hover">
+                    <a href="index.html">
+                        <h6 class="title">Megan Sleezer</h6>
+                    </a>
+                </div>
+                <div class="nav-item nav-btn" id="header-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
-        </nav>
+            <div class="header-nav" id="header-menu">
+                <div class="nav-right">
+                    <div class="nav-item text-center">
+                        <a href="index.html">Home</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="about.html">About</a>
+                    </div>
+                    <div class="nav-item active">
+                        <a href="portfolio.html">Projects</a>
+                    </div>
+                    <div class="nav-item">
+                        <a href="contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!-- Main content -->
-    <main class="container mt-5">
-
-        <h3 class="card-title text-center mt-5 pt-4">Portfolio</h3>
-        <!-- <div class="row row-cols-lg-3 justify-content-center"> -->
-        <div class="card-deck">
-            
-            <!-- First project information here -->
-            <div class="card shadow-lg">
-                <div class="card-header">
-                    <h5 class="card-title text-center">StarPlannr Web App</h5>
-                    <img src="assets/StarPlannr.PNG" class="card-img-top" alt="Screenshot of StarPlannr">
-                </div>
-                <div class="card-body">
-                  <a target="_blank" href="https://github.com/mslee001/StarPlannr" class="btn button-teal mb-1 btn-block">StarPlannr Github Repo</a>
-                  <a target="_blank" href="https://mslee001.github.io/StarPlannr/" class="btn button-teal btn-block">StarPlannr</a>
-                </div>
-              </div>
-
-            <div class="card shadow-lg">
-                <div class="card-header">
-                    <h5 class="card-title text-center">Weather Dashboard</h5>
-                    <img src="assets/weather-dash2.PNG" class="card-img-top" alt="A screenshot of Weather Dashboard">
-                </div>
-                <div class="card-body">
-                  <a target="_blank" href="https://github.com/mslee001/Weather-Dashboard" class="btn button-teal mb-1 btn-block">Weather Dashboard Github Repo</a>
-                  <a target="_blank" href="https://mslee001.github.io/Weather-Dashboard/" class="btn button-teal btn-block">Weather Dashboard</a>
-                </div>
-              </div>
-
-            <div class="card shadow-lg">
-                <div class="card-header">
-                    <h5 class="card-title text-center">Work Day Scheduler</h5>
-                    <img src="assets/work-day-scheduler.PNG" class="card-img-top" alt="A screenshot of Work Day Scheduler">
-                </div>
-                <div class="card-body">
-                  <a target="_blank" href="https://github.com/mslee001/Work-Day-Scheduler" class="btn button-teal mb-1 btn-block">Work Day Scheduler Github Repo</a>
-                  <a target="_blank" href="https://mslee001.github.io/Work-Day-Scheduler/" class="btn button-teal btn-block">Work Day Scheduler</a>
-                </div>
-              </div>
-
-              <div class="card shadow-lg">
-                  <div class="card-header">
-                      <h5 class="card-title text-center">Software Team Generator CLI App</h5>
-                      <img src="assets/software-team.PNG" class="card-img-top" alt="A screenshot of the html output">
-                  </div>
-                <div class="card-body">
-                  <a target="_blank" href="https://github.com/mslee001/software-engineer-team-generator" class="btn button-teal mb-1 btn-block">Software Team Generator CLI App Github Repo</a>
-                </div>
-              </div>
-              
-              <div class="card shadow-lg">
-                  <div class="card-header">
-                      <h5 class="card-title text-center">Devour Burgers! Web App</h5>
-                      <img src="assets/burger-app.PNG" class="card-img-top" alt="Screenshot of Devour Burgers">
+    <main class="content-fluid">
+        
+        <!-- First project information here -->
+            <div class="row padtop u-center">
+            <div class="col-9">
+                <div data-aos="zoom-in-right" data-aos-duration="3000" class="card u-fill-width">
+                    <div class="card-head">
+                        <p class="card-head-title">StarPlannr Web App</p>
                     </div>
-                    <div class="card-body">
-                        <a target="_blank" href="https://github.com/mslee001/burger-logger" class="btn button-teal mb-1 btn-block">Devour Burgers Github Repo</a>
-                        <a target="_blank" href="https://tranquil-lowlands-26889.herokuapp.com/" class="btn button-teal btn-block">Devour Burgers</a>
+                    <div class="content">
+                        <img src="assets/StarPlannr.PNG" alt="screenshot of starplannr web app">
+                        <p>A web app to provide star enthusiasts weather information given a date and location. This web
+                            app will give the user a rating on if it's a good night to view stars.</p>
+                        <div class="action-bar u-center">
+                            <button class="btn"><span class="usquare"><a class="utb utb-OLR" target="_blank" href="https://github.com/mslee001/StarPlannr">Github
+                                    Repo</a></span></button>
+                            <button class="btn"><span class="usquare"><a class="utb utb-OLR" target="_blank" href="https://mslee001.github.io/StarPlannr/">Web
+                                    Page</a></span></button>
+                        </div>
                     </div>
                 </div>
             </div>
-        <!-- </div> -->
+        </div>
+
+        <!-- Second project information here -->
+        <div class="row panel u-center">
+            <div class="col-9">
+                <div data-aos="zoom-in-left" data-aos-duration="3000" class="card u-fill-width">
+                    <div class="card-head">
+                        <p class="card-head-title">Weather Dashboard</p>
+                    </div>
+                    <div class="content">
+                        <img src="assets/weather-dash2.PNG" alt="screenshot of weather dashboard web app">
+                        <p>A weather web app using the OpenWeatherAPI to display weather data for cities the user
+                            searches for.</p>
+                        <div class="action-bar u-center">
+                            <button class="btn"><span class="usquare"><a class="utb utb-OLR" target="_blank"
+                                    href="https://github.com/mslee001/Weather-Dashboard">Github Repo</a></span></button>
+                            <button class="btn"><span class="usquare"><a class="utb utb-OLR" target="_blank"
+                                    href="https://mslee001.github.io/Weather-Dashboard/">Web Page</a></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Third project information here -->
+        <div class="row panel u-center">
+            <div class="col-9">
+                <div data-aos="zoom-in-right" data-aos-duration="3000" class="card u-fill-width">
+                    <div class="card-head">
+                        <p class="card-head-title">Work Day Scheduler</p>
+                    </div>
+                    <div class="content">
+                        <img src="assets/work-day-scheduler.PNG" alt="screenshot of work day scheduler web app">
+                        <p>This web page uses local storage to schedule events for the current day.</p>
+                        <div class="action-bar u-center">
+                            <button class="btn"><span class="usquare"><a class="utb utb-OLR" target="_blank"
+                                    href="https://github.com/mslee001/Work-Day-Scheduler">Github Repo</a></span></button>
+                            <button class="btn"><span class="usquare"><a class="utb utb-OLR" target="_blank"
+                                    href="https://mslee001.github.io/Work-Day-Scheduler/">Web Page</a></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fourth project information here -->
+        <div class="row panel u-center">
+            <div class="col-9">
+                <div data-aos="zoom-in-left" data-aos-duration="3000" class="card">
+                    <div class="card-head">
+                        <p class="card-head-title">Software Team Generator CLI App</p>
+                    </div>
+                    <div class="content">
+                        <img src="assets/software-team.PNG" alt="screenshot of software team app">
+                        <p>This Software Engineering Team Generator CLI application is using the inquirer library and
+                            run with node. The user is asked a series of questions to gain information on their team.
+                            Once the user is finished answering all the questions, an html page is created to display
+                            all members of the team.</p>
+                        <div class="action-bar u-center">
+                            <button class="btn"><span class="usquare"><a class="utb utb-OLR" target="_blank"
+                                    href="https://github.com/mslee001/software-engineer-team-generator">Github
+                                    Repo</a></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Fifth project information here -->
+        <div class="row panel u-center">
+            <div class="col-9">
+                <div data-aos="zoom-in-right" data-aos-duration="3000" class="card u-fill-width">
+                    <div class="card-head">
+                        <p class="card-head-title">Devour Burgers! Web App</p>
+                    </div>
+                    <div class="content">
+                        <img src="assets/burger-app.PNG" alt="screenshot of burger web app">
+                        <p>Simple application using node express, mysql, ORM and handlebars. The user is able to add a
+                            burger to the database and the burger displays on the webpage in a "Menu!" list. The user is
+                            given an option to "DEVOUR" the burger which then moves it to the other side of the webpage
+                            in a new list. The user also has the option to "Remake the Burger" which places the burger
+                            back on the menu.</p>
+                        <div class="action-bar u-center">
+                            <button class="btn"><span class="usquare"><a class="utb utb-OLR" target="_blank"
+                                    href="https://github.com/mslee001/burger-logger">Github Repo</a></span></button>
+                            <button class="btn"><span class="usquare"><a class="utb utb-OLR" target="_blank"
+                                    href="https://tranquil-lowlands-26889.herokuapp.com/">Web App</a></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sixth project information here -->
+        <div class="row panel u-center">
+            <div class="col-9">
+                <div data-aos="zoom-in-left" data-aos-duration="3000" class="card u-fill-width">
+                    <div class="card-head">
+                        <p class="card-head-title">Copy Cat E-Commerce Site</p>
+                    </div>
+                    <div class="content">
+                        <img src="assets/Copycats.PNG" alt="screenshot of Copycats web app">
+                        <p>This is a mock e-commerce site using Node, Express Server, MySQL, and Sequelize</p>
+                        <div class="action-bar u-center">
+                            <button class="btn"><span class="usquare"><a class="utb utb-OLR" target="_blank"
+                                    href="https://github.com/pabloivanjuarez/project_deux">Github Repo</a></span></button>
+                            <button class="btn"><span class="usquare"><a class="utb utb-OLR" target="_blank" href="http://project-deux.herokuapp.com/">Web
+                                    App</a></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
-    <!-- Fixed footer bar at bottom of page -->
-    <footer class="footer mt-auto py-3 fixed-bottom footer-border"></footer>
-
-    <!-- Required scripts for some bootstrap components -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
+    <!-- Footer bar at bottom of page -->
+    <footer class="text-light">
+        <div class="footer-list-title">Social</div>
+        <div class="footer-list-item">
+            <span class="icon"></span><i class="fab fa-facebook"></i></span>
+            <span class="icon"></span><i class="fab fa-github"></i></span>
+            <span class="icon"></span><i class="fab fa-twitter-square"></i></span>
+            <span class="icon"></span>
+        </div>
+        <p>Made with <i class="fa fa-heart animated pulse large" aria-hidden="true"></i> by <a href="https://github.com/mslee001" target="_blank">Megan Sleezer</a></p>
+    </footer>
 
 </body>
 
